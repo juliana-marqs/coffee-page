@@ -1,0 +1,52 @@
+@media (max-width: 760px) {
+    
+    div.barra-superior{
+        width: 100vw;
+        position: relative;
+        text-align: center;
+    }
+
+    div.barra-superior h1{
+        padding-bottom: 15px;
+    }
+
+    .menu ul{
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajuste conforme a altura do seu header */
+        right: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .menu ul.ativo {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+
+    .hamburguer {
+        display: block; /* Exibe o botão hambúrguer */
+    }
+
+    div.inicio {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    main ul.nav-pagina{
+        display: none;
+    }
+
+    section.cardapio {
+            margin-top: 25px;
+    }
+    
+    footer {
+        font-size: 14px; /* Ajusta o tamanho do texto se necessário */
+        padding: 15px 5px 5px 5px; /* Reduz o padding para economizar espaço */
+    }
+}

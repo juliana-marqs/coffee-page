@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="barra-superior">
+                <a href="#">
+                    <h1 class="logo">Coffee</h1>
+                </a>
+                <nav class="menu">
+                    <button class="hamburguer" aria-label="Abrir menu">&#9776;</button> <!--icone de hamburguer-->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Café</a></li>
+                        <li><a href="#">Padaria</a></li>
+                        <li><a href="#">Loja</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li class="btn">
+                            <a href="#" class="pesquisa-icone">Pesquisar...🔍</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="inicio">
+                <p>Seja bem-vindo!</p>
+                <h2>Nós servimos o melhor café da cidade.</h2>
+                <a href="#" class="btn-banner">Confira Agora!</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <ul class="nav-pagina">
+            <li class="indice">
+                <a href="#">
+                    <img src="src/imagens/icone-delivery.png" alt="icone Delivery">
+                    <p>Delivery</p>
+                </a>
+            </li>
+            <li class="indice">
+                <a href="#">
+                    <img src="src/imagens/icone-cafe-quente.png" alt="icone de café">
+                    <p>Café Quente</p>
+                </a>
+            </li>
+            <li class="indice">
+                <a href="#">
+                    <img src="src/imagens/icone-cafe-gelado.png" alt="Icone Café Gelado">
+                    <p>Café Gelado</p>
+                </a>
+            </li>
+            
+            <li class="indice">
+                <a href="#">
+                    <img src="src/imagens/icone-sobremesa.png" alt="Icone Sobremesa">
+                    <p>Sobremesa</p>
+                </a>
+            </li>
+        </ul>
+        <section class="cardapio">
+            <div class="cafe-especial">
+                <h3>Nossos cafés especiais</h3>
+                <ul>
+                    <li class="itens">
+                        <img src="src/imagens/mochiatto.png" alt="café mochiatto" class="img">
+                        <p class="nome-produto">Café Mochiatto</p>
+                        <p class="descricao-produto">Café expresso e espuma de leite</p>
+                        <p class="valor-produto">R$8,00</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/expresso.png" alt="café expresso" class="img">
+                        <p class="nome-produto">Café Expresso</p>
+                        <p class="descricao-produto">Café moído fresco e água quente</p>
+                        <p class="valor-produto">R$8,00</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/latte.png" alt="café latte" class="img">
+                        <p class="nome-produto">Café Latte</p>
+                        <p class="descricao-produto">Café expresso, leite vaporizado e espuma de leite</p>
+                        <p class="valor-produto">R$12,00</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/americano.png" alt="café americano" class="img">
+                        <p class="nome-produto">Café Americano</p>
+                        <p class="descricao-produto">Café expresso forte com aguá pra diluir</p>
+                        <p class="valor-produto">R$6.00</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="sobremesas">
+                <h3>Nossas sobremesas especiais</h3>
+                <ul>
+                    <li class="itens">
+                        <img src="src/imagens/croissants.png" alt="croissants de morango" class="img">
+                        <p class="nome-produto">Croissants</p>
+                        <p class="descricao-produto">Croissants de Morango com Creme Belga e chocolate branco</p>
+                        <p class="valor-produto">R$10,50</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/torta-de-morango.png" alt="torta de morango" class="img">
+                        <p class="nome-produto">Torta de Morango</p>
+                        <p class="descricao-produto">Torta de morango com creme de confeiteiro e massa de pão de ló</p>
+                        <p class="valor-produto">R$25,00kg</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/suco-bolo.png" alt="comidas de café da manhã" class="img">
+                        <p class="nome-produto">Kit Café da Manhã</p>
+                        <p class="descricao-produto">Combo de suco da sua preferencia, dois acompanhamentos e um café especial
+                        </p>
+                        <p class="valor-produto">R$36,50</p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                    </li>
+                    <li class="itens">
+                        <img src="src/imagens/torta.png" alt="torta salgada" class="img">
+                        <p class="nome-produto">Torta salgada</p>
+                        <p class="descricao-produto">Torta de frango com requeijão</p>
+                        <p class="valor-produto">R$23,50kg
+                        <p class="valor-produto"></p>
+                        <input type="button" value="Adicionar" class="btn-carrinho">
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="frase-rodape">Encontre aqui os melhores grãos de café!</p>
+        <input type="button" value="Explore nossos produtos">
+        <div class="contato">
+            <p class="logo-footer">Coffee</p>
+            <div class="redes-sociais">
+                <p class="titulo">Redes Sociais</p>
+                <a href="#">
+                    <img src="src/imagens/facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="src/imagens/instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="src/imagens/linkedin.png" alt="Linkedin">
+                </a>
+                <a href="#">
+                    <img src="src/imagens/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>

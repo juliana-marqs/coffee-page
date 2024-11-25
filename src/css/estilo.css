@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --fonte-padrao: "Montserrat", sans-serif;
+    --fonte-logo: "Playfair Display", serif;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    font-size: 15px;
+    background-image: url(../imagens/fundo.jpg);
+}
+
+header, footer {
+    background-image: url(../imagens/capa-banner.png);
+    width: 100%;
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.359);
+    border-radius: 5px;
+}
+
+div.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    background-image: url(../imagens/capa-banner.png);
+    width: 100%;
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
+}
+
+.barra-superior h1{
+    font-size: 20px;
+    margin-left: 15px;
+    font-family: var(--fonte-logo);
+}
+
+.menu ul{
+    display: flex;
+    gap: 15px;
+}
+
+.hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.menu li a{
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.menu li a:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.menu li.btn{
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.menu .pesquisa-icone{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+div.inicio {
+    padding: 140px 55px 60px 55px;
+    text-align: left;
+}
+
+div.inicio h2{
+    margin: 15px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.348);
+}
+
+div.inicio p {
+    font-weight: 600;
+    font-style: italic;
+}
+
+a.btn-banner, footer input{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+main .nav-pagina {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+}
+
+main .nav-pagina img{
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    object-fit: contain; /* ajusta a imagem sem distorção */
+}
+
+main .nav-pagina li{
+    font-size: 15px;
+    font-family: var(--fonte-logo);
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+main .nav-pagina p {
+    color: white;
+}
+
+main .cardapio {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.337);
+    text-align: center;
+    gap: 15px;
+}
+
+main .cardapio > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main .cardapio .cafe-especial,
+main .cardapio .sobremesas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .cardapio h3{
+    font-size: 25px;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+main .cardapio .itens .img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+main .cardapio ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+main .cardapio li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+main .cardapio .nome-produto{
+    font-family: var(--fonte-logo);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .cardapio .descricao-produto{
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+    margin-bottom: auto;
+}
+
+main .cardapio .valor-produto{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+main .cardapio .btn-carrinho{
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+main .cardapio .btn-carrinho:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+footer .frase-rodape{
+    padding: 15px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.268);
+    font-weight: 300;
+}
+
+footer .contato{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 10px;
+    align-items: flex-end;
+}
+
+footer .contato .logo-footer {
+    font-family: var(--fonte-logo);
+    font-weight: bold;
+    display: flex;
+}
+
+footer .titulo{
+    font-size: 18px;
+    font-weight: 450;
+}
+
+footer input:hover{
+    cursor: pointer;
+}
+
+footer .redes-sociais a {
+    transition: 0.3s ease-in-out;
+    padding: 2px;
+}
+
+footer .redes-sociais a:hover{
+    cursor: pointer;
+    padding: 0 3px;
+}
